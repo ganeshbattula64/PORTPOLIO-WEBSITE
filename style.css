@@ -1,0 +1,221 @@
+    /* General Styles */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, rgba(255, 157, 0, 0.708), rgb(3, 3, 27));
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      /* background-color: #333; */
+      padding: 10px 20px;
+      color: white;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+    }
+
+    .navbar-brand h1 {
+      margin: 0;
+    }
+
+    .navbar-links {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      transition: max-height 0.3s ease;
+    }
+
+    .navbar-links a {
+      text-decoration: none;
+      color: white;
+      padding: 8px 12px;
+      border-radius: 4px;
+      transition: background-color 0.3s;
+    }
+
+    .navbar-links a:hover {
+      background-color: #575757;
+    }
+
+    /* .search-container {
+      display: flex;
+      align-items: center;
+    } */
+
+    /* .search-container input {
+      padding: 5px;
+      border: none;
+      border-radius: 4px;
+    } */
+
+    /* .search-container button {
+      padding: 5px 10px;
+      border: none;
+      border-radius: 4px;
+      background-color: #575757;
+      color: white;
+      cursor: pointer;
+    } */
+
+    /* .search-container button:hover {
+      background-color: #444;
+    } */
+
+    .menu-toggle {
+      display: none;
+      font-size: 24px;
+      background: none;
+      border: none;
+      color: white;
+      cursor: pointer;
+    }
+
+    .content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      margin-top:10%; /* Push content below the fixed navbar */
+    }
+
+    .about {
+      flex: 1;
+      padding: 20px;
+    }
+
+    .about h2 {
+      margin-top: 0;
+      font-size: 3rem;
+      color: white;
+
+    }
+    .about h3 {
+      margin-top: 0;
+      font-size: 2rem;
+      color: white;
+    }
+    .social-icons {
+      margin-top: 20px;
+      display: flex;
+      gap: 15px;
+    }
+
+    .social-icons a {
+      text-decoration: none;
+      font-size: 24px;
+      color: white;
+      transition: color 0.3s;
+    }
+
+    .social-icons a:hover {
+      color: #007bff;
+    }
+
+    .image-container {
+      flex: 1;
+      text-align: center;
+    }
+
+    .image-container img {
+      max-width: 50%;
+      height: auto;
+      border-radius: 10px;
+      border-radius: 50%;
+    }
+.education1{
+/* background-color: #de5959; */
+width: 100%;
+height: auto;
+}
+    .edu{
+      width: 100%;
+      height: auto;
+      display:flex;
+      gap:30%;
+    }
+    .edu h2{
+      color:beige;
+    }
+    .cation{
+    display: flex;
+    gap: 18%;
+    }
+  .img-pro img{
+    height:70%;
+    width: 40%;
+    border-radius:5px;
+    box-shadow: #de5959;
+    margin-left: 30%;
+  }
+  .pro{
+    display: flex;
+  }
+  .pro p{
+    margin-left:20px;
+  }
+
+  .con{
+    /* background-color: antiquewhite; */
+    display: flex;
+    gap: 20%;
+  }
+  .contacts-left,p,a{
+    margin-left:20px;
+  }
+  #cv{
+    margin-top: 30px;
+  }
+  .contacts-right{
+    margin-top: 30px;
+  }
+  
+  #sh{
+    /* background-color: #de5959; */
+  }
+  
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .navbar-links {
+        display: flex;
+        flex-direction: column;
+        background-color: #333;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        overflow: hidden;
+        max-height: 0;
+      }
+
+      .navbar-links a {
+        text-align: center;
+        margin: 5px 0;
+      }
+
+      .menu-toggle {
+        display: block;
+      }
+
+      .navbar-links.open {
+        max-height: 300px; /* Adjust height based on your links */
+      }
+
+      .content {
+        flex-direction: column;
+        margin-top: 100px; /* Adjust margin to accommodate the expanded navbar */
+      }
+
+      .image-container {
+        order: 1;
+      }
+
+      .about {
+        order: 2;
+      }
+    }
